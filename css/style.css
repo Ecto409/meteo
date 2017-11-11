@@ -36,6 +36,10 @@ body {
 
 /* On boldise légèrement les h3 */
 
+h1 {
+  font-weight: 700;
+}
+
 h3 {
   font-weight: 700;
 }
