@@ -39,8 +39,8 @@ body {
 
 h1 {
   font-weight: 700;
-  color: black;
-  font-size: 1.9rem;
+  color: black !important;
+  font-size: 1.9rem !important;
 }
 
 h3 {
