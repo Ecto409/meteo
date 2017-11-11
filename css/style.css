@@ -55,6 +55,8 @@ h3 {
 h6 {
   font-variant: small-caps;
   letter-spacing: -0.05rem;
-  color: grey;
+  color: silver;
   margin-bottom: 0px;
+  font-weight: 400;
+  font-size: 0.75rem;
 }
