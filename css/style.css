@@ -35,10 +35,12 @@ body {
   border-radius: 0.375rem 0.375rem 0 0;
 }
 
-/* On boldise légèrement les h3 */
+/* On modifie légèrement les h */
 
 h1 {
   font-weight: 700;
+  color: black;
+  font-size: 2rem;
 }
 
 h3 {
