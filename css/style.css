@@ -60,3 +60,20 @@ h6 {
   font-weight: 400;
   font-size: 0.75em;
 }
+
+/* On stylise les infos */
+
+.infos {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 200;
+  color: #333;
+}
+
+h5 {
+  margin-top: 0px;
+  font-variant: small-caps;
+  color: #333;
+  letter-spacing: -0.05rem;
+  font-weight: 400;
+}
