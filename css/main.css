@@ -28,7 +28,8 @@
   margin: -75px 0 0 -75px;
   border-radius: 50%;
   border: 3px solid transparent;
-  border-top-color: #538EA6;
+  border-top-color: white/*#538EA6*/
+  ;
   -webkit-animation: spin 2s linear infinite;
   /* Chrome, Opera 15+, Safari 5+ */
   animation: spin 2s linear infinite;
@@ -45,7 +46,8 @@
   bottom: 5px;
   border-radius: 50%;
   border: 3px solid transparent;
-  border-top-color: #F2D1B3;
+  border-top-color: white/*#F2D1B3*/
+  ;
   -webkit-animation: spin 3s linear infinite;
   /* Chrome, Opera 15+, Safari 5+ */
   animation: spin 3s linear infinite;
@@ -61,7 +63,8 @@
   bottom: 15px;
   border-radius: 50%;
   border: 3px solid transparent;
-  border-top-color: #F28C8C;
+  border-top-color: white/*#F28C8C*/
+  ;
   -webkit-animation: spin 1.5s linear infinite;
   /* Chrome, Opera 15+, Safari 5+ */
   animation: spin 1.5s linear infinite;
@@ -111,7 +114,7 @@
   top: 0;
   width: 51%;
   height: 100%;
-  background: white;
+  background: #F2D1B3;
   z-index: 1000;
   -webkit-transform: translateX(0);
   /* Chrome, Opera 15+, Safari 3.1+ */
@@ -132,22 +135,22 @@
 /* Loaded */
 
 .loaded #loader-wrapper .loader-section.section-left {
-  -webkit-transform: translateX(-100%);
+  -webkit-transform: translateY(-100%);
   /* Chrome, Opera 15+, Safari 3.1+ */
-  -ms-transform: translateX(-100%);
+  -ms-transform: translateY(-100%);
   /* IE 9 */
-  transform: translateX(-100%);
+  transform: translateY(-100%);
   /* Firefox 16+, IE 10+, Opera */
   -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
   transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
 }
 
 .loaded #loader-wrapper .loader-section.section-right {
-  -webkit-transform: translateX(100%);
+  -webkit-transform: translateY(-100%);
   /* Chrome, Opera 15+, Safari 3.1+ */
-  -ms-transform: translateX(100%);
+  -ms-transform: translateY(-100%);
   /* IE 9 */
-  transform: translateX(100%);
+  transform: translateY(-100%);
   /* Firefox 16+, IE 10+, Opera */
   -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
   transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
