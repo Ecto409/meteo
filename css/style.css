@@ -53,6 +53,7 @@ h3 {
 }
 
 h6 {
+  text-transform: lowercase;
   font-variant: small-caps;
   letter-spacing: -0.05rem;
   color: #ccc;

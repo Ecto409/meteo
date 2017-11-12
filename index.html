@@ -16,6 +16,8 @@
   <link rel="apple-touch-icon" sizes="167x167" href="https://ecto409.github.io/meteo/img/3.png">
   <link rel="stylesheet" href="css/main.css">
   <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+  <script src="js/ajax.js"></script>
+  <script src="js/cours.js"></script>
 </head>
 
 <body>
@@ -41,11 +43,13 @@
 
             </div>
             <div class="uk-card-body">
-              <h6>monday 15 august</h6>
-              <h3 class="uk-card-title">Getting hot!</h3>
+              <h6 id="jour0"></h6>
+              <h3 class="uk-card-title" id="jour0Conditions"></h3>
               <div class="uk-grid-divider uk-grid-small uk-margin-small-bottom" uk-grid>
-                <div class="infos uk-width-1-3">10°<br />
-                  <h5>temperature</h5></div>
+                <div class="infos uk-width-1-3">
+                  <div id="jour0Temperature"></div>
+                  <h5>temperature</h5>
+                </div>
                 <div class="infos uk-width-1-3">87%<br />
                   <h5>humidity</h5></div>
                 <div class="infos uk-width-1-3">20kh<br />
@@ -62,11 +66,13 @@
               <img src="img/cloudyslow.gif" alt="" width="100%">
             </div>
             <div class="uk-card-body">
-              <h6>tuesday 16 august</h6>
-              <h3 class="uk-card-title">A bit chilly</h3>
+              <h6 id="jour1"></h6>
+              <h3 class="uk-card-title" id="jour1Conditions"></h3>
               <div class="uk-grid-divider uk-grid-small uk-margin-small-bottom" uk-grid>
-                <div class="infos uk-width-1-3">10°<br />
-                  <h5>temperature</h5></div>
+                <div class="infos uk-width-1-3">
+                  <div id="jour1Temperature"></div>
+                  <h5>temperature</h5>
+                </div>
                 <div class="infos uk-width-1-3">87%<br />
                   <h5>humidity</h5></div>
                 <div class="infos uk-width-1-3">20kh<br />
@@ -83,11 +89,13 @@
               <img src="img/rainyslow.gif" alt="" width="100%">
             </div>
             <div class="uk-card-body">
-              <h6>tuesday 16 august</h6>
-              <h3 class="uk-card-title">A bit chilly</h3>
+              <h6 id="jour2"></h6>
+              <h3 class="uk-card-title" id="jour2Conditions"></h3>
               <div class="uk-grid-divider uk-grid-small uk-margin-small-bottom" uk-grid>
-                <div class="infos uk-width-1-3">10°<br />
-                  <h5>temperature</h5></div>
+                <div class="infos uk-width-1-3">
+                  <div id="jour2Temperature"></div>
+                  <h5>temperature</h5>
+                </div>
                 <div class="infos uk-width-1-3">87%<br />
                   <h5>humidity</h5></div>
                 <div class="infos uk-width-1-3">20kh<br />
@@ -104,11 +112,13 @@
               <img src="img/rainy.png" alt="" width="100%">
             </div>
             <div class="uk-card-body">
-              <h6>tuesday 16 august</h6>
-              <h3 class="uk-card-title">A bit chilly</h3>
+              <h6 id="jour3"></h6>
+              <h3 class="uk-card-title" id="jour3Conditions"></h3>
               <div class="uk-grid-divider uk-grid-small uk-margin-small-bottom" uk-grid>
-                <div class="infos uk-width-1-3">10°<br />
-                  <h5>temperature</h5></div>
+                <div class="infos uk-width-1-3">
+                  <div id="jour3Temperature"></div>
+                  <h5>temperature</h5>
+                </div>
                 <div class="infos uk-width-1-3">87%<br />
                   <h5>humidity</h5></div>
                 <div class="infos uk-width-1-3">20kh<br />
@@ -125,11 +135,13 @@
               <img src="img/rainy.png" alt="" width="100%">
             </div>
             <div class="uk-card-body">
-              <h6>tuesday 16 august</h6>
-              <h3 class="uk-card-title">A bit chilly</h3>
+              <h6 id="jour4"></h6>
+              <h3 class="uk-card-title" id="jour4Conditions"></h3>
               <div class="uk-grid-divider uk-grid-small uk-margin-small-bottom" uk-grid>
-                <div class="infos uk-width-1-3">10°<br />
-                  <h5>temperature</h5></div>
+                <div class="infos uk-width-1-3">
+                  <div id="jour4Temperature"></div>
+                  <h5>temperature</h5>
+                </div>
                 <div class="infos uk-width-1-3">87%<br />
                   <h5>humidity</h5></div>
                 <div class="infos uk-width-1-3">20kh<br />
@@ -146,11 +158,13 @@
               <img src="img/rainy.png" alt="" width="100%">
             </div>
             <div class="uk-card-body">
-              <h6>tuesday 16 august</h6>
-              <h3 class="uk-card-title">A bit chilly</h3>
+              <h6 id="jour5"></h6>
+              <h3 class="uk-card-title" id="jour5Conditions"></h3>
               <div class="uk-grid-divider uk-grid-small uk-margin-small-bottom" uk-grid>
-                <div class="infos uk-width-1-3">10°<br />
-                  <h5>temperature</h5></div>
+                <div class="infos uk-width-1-3">
+                  <div id="jour5Temperature"></div>
+                  <h5>temperature</h5>
+                </div>
                 <div class="infos uk-width-1-3">87%<br />
                   <h5>humidity</h5></div>
                 <div class="infos uk-width-1-3">20kh<br />
@@ -167,32 +181,13 @@
               <img src="img/rainy.png" alt="" width="100%">
             </div>
             <div class="uk-card-body">
-              <h6>tuesday 16 august</h6>
-              <h3 class="uk-card-title">A bit chilly</h3>
+              <h6 id="jour6"></h6>
+              <h3 class="uk-card-title" id="jour6Conditions"></h3>
               <div class="uk-grid-divider uk-grid-small uk-margin-small-bottom" uk-grid>
-                <div class="infos uk-width-1-3">10°<br />
-                  <h5>temperature</h5></div>
-                <div class="infos uk-width-1-3">87%<br />
-                  <h5>humidity</h5></div>
-                <div class="infos uk-width-1-3">20kh<br />
-                  <h5>wind</h5></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="uk-child-width-1-1@m" uk-grid uk-scrollspy="cls: uk-animation-slide-bottom-medium; repeat: true">
-        <div>
-          <div class="uk-card uk-card-default">
-            <div class="uk-card-media-top">
-              <img src="img/rainy.png" alt="" width="100%">
-            </div>
-            <div class="uk-card-body">
-              <h6>tuesday 16 august</h6>
-              <h3 class="uk-card-title">A bit chilly</h3>
-              <div class="uk-grid-divider uk-grid-small uk-margin-small-bottom" uk-grid>
-                <div class="infos uk-width-1-3">10°<br />
-                  <h5>temperature</h5></div>
+                <div class="infos uk-width-1-3">
+                  <div id="jour6Temperature"></div>
+                  <h5>temperature</h5>
+                </div>
                 <div class="infos uk-width-1-3">87%<br />
                   <h5>humidity</h5></div>
                 <div class="infos uk-width-1-3">20kh<br />
