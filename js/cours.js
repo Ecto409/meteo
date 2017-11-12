@@ -1,5 +1,5 @@
 // Accès à la météo de Lyon avec la clé d'accès 50a65432f17cf542
-ajaxGet("http://api.wunderground.com/api/50a65432f17cf542/forecast10day/q/Belgium/Namur.json", function(reponse) {
+ajaxGet("https://api.wunderground.com/api/50a65432f17cf542/forecast10day/q/Belgium/Namur.json", function(reponse) {
   var meteo = JSON.parse(reponse);
   // Récupération de certains résultats
   var jour0Weekday = meteo.forecast.simpleforecast.forecastday[0].date.weekday;
