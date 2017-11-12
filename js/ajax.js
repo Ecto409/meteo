@@ -1,12 +1,10 @@
-// Exécute un appel AJAX GET
-// Prend en paramètres l'URL cible et la fonction callback appelée en cas de succès
 $.ajaxSetup({
   scriptCharset: "utf-8", //or "ISO-8859-1"
   contentType: "application/json; charset=utf-8"
 });
 
-$.getJSON('http://whateverorigin.org/get?url=' +
-  encodeURIComponent('http://api.wunderground.com') + '&callback=?',
+function getJSON('http://whateverorigin.org/get?url=' +
+  encodeURIComponent('http://api.wunderground.com/api/50a65432f17cf542/forecast10day/q/Belgium/Namur.json') + '&callback=?',
   function(data) {
     console.log("> ", data);
 
