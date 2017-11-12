@@ -225,7 +225,7 @@ ajaxGet("https://api.wunderground.com/api/50a65432f17cf542/forecast10day/q/Belgi
   } else if (jour6Conditions == "Clear") {
     document.getElementById('jour6Image').src = "img/sunny.gif";
   } else {
-    document.getElementById('jour0Image').src = "img/cloudy.gif";
+    document.getElementById('jour6Image').src = "img/cloudy.gif";
   };
 
 
