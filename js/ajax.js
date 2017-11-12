@@ -1,18 +1,5 @@
 // Exécute un appel AJAX GET
 // Prend en paramètres l'URL cible et la fonction callback appelée en cas de succès
-$.ajaxGet({
-  url: "testserver.php",
-  dataType: 'jsonp', // Notice! JSONP <-- P (lowercase)
-  success: function(json) {
-    // do stuff with json (in this case an array)
-    alert("Success");
-  },
-  error: function() {
-    alert("Error");
-  }
-});
-
-
 function ajaxGet(url, callback) {
   var req = new XMLHttpRequest();
   req.open("GET", url);
