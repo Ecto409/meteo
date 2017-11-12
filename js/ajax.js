@@ -3,17 +3,9 @@ $.ajaxSetup({
   contentType: "application/json; charset=utf-8"
 });
 
-function getJSON('http://whateverorigin.org/get?url=' +
-  encodeURIComponent('http://api.wunderground.com/api/50a65432f17cf542/forecast10day/q/Belgium/Namur.json') + '&callback=?',
-  function(data) {
-    console.log("> ", data);
-
-    //If the expected response is text/plain
-    $("#viewer").html(data.contents);
-
-    //If the expected response is JSON
-    //var response = $.parseJSON(data.contents);
-  });
+function ggetJSON('http://www.whateverorigin.org/get?url=' + encodeURIComponent('http://api.wunderground.com/api/50a65432f17cf542/forecast10day/q/Belgium/Namur.json') + '&callback=?', function(data) {
+  alert(data.contents);
+});
 
 function ajaxGet(url, callback) {
   var req = new XMLHttpRequest();
