@@ -69,7 +69,20 @@ ajaxGet("https://api.wunderground.com/api/50a65432f17cf542/forecast10day/q/Belgi
   var conditionsElt = document.getElementById('jour0Humidite');
   conditionsElt.textContent = jour0Humidite + "%";
   var conditionsElt = document.getElementById('jour0Vent');
-  conditionsElt.textContent = jour0Vent + "k/h";
+  conditionsElt.textContent = jour0Vent + "Kh";
+  if (jour0Conditions == "Chance of Rain") {
+    document.getElementById('jour0Image').src = "img/rainy.gif";
+  } else if (jour0Conditions == "Rain") {
+    document.getElementById('jour0Image').src = "img/rainy.gif";
+  } else if (jour0Conditions == "Sunny") {
+    document.getElementById('jour0Image').src = "img/sunny.gif";
+  } else if (jour0Conditions == "Mostly Cloudy") {
+    document.getElementById('jour0Image').src = "img/cloudy.gif";
+  } else if (jour0Conditions == "Clear") {
+    document.getElementById('jour0Image').src = "img/sunny.gif";
+  } else {
+    document.getElementById('jour0Image').src = "img/cloudy.gif";
+  };
 
   var conditionsElt = document.getElementById('jour1');
   conditionsElt.textContent = jour1Weekday + ", " + jour1Monthname + " " + jour1Day;
@@ -80,7 +93,20 @@ ajaxGet("https://api.wunderground.com/api/50a65432f17cf542/forecast10day/q/Belgi
   var conditionsElt = document.getElementById('jour1Humidite');
   conditionsElt.textContent = jour1Humidite + "%";
   var conditionsElt = document.getElementById('jour1Vent');
-  conditionsElt.textContent = jour1Vent + "k/h";
+  conditionsElt.textContent = jour1Vent + "Kh";
+  if (jour1Conditions == "Chance of Rain") {
+    document.getElementById('jour1Image').src = "img/rainy.gif";
+  } else if (jour1Conditions == "Rain") {
+    document.getElementById('jour1Image').src = "img/rainy.gif";
+  } else if (jour1Conditions == "Sunny") {
+    document.getElementById('jour1Image').src = "img/sunny.gif";
+  } else if (jour1Conditions == "Mostly Cloudy") {
+    document.getElementById('jour1Image').src = "img/cloudy.gif";
+  } else if (jour1Conditions == "Clear") {
+    document.getElementById('jour1Image').src = "img/sunny.gif";
+  } else {
+    document.getElementById('jour1Image').src = "img/cloudy.gif";
+  };
 
   var conditionsElt = document.getElementById('jour2');
   conditionsElt.textContent = jour2Weekday + ", " + jour2Monthname + " " + jour2Day;
@@ -91,7 +117,20 @@ ajaxGet("https://api.wunderground.com/api/50a65432f17cf542/forecast10day/q/Belgi
   var conditionsElt = document.getElementById('jour2Humidite');
   conditionsElt.textContent = jour2Humidite + "%";
   var conditionsElt = document.getElementById('jour2Vent');
-  conditionsElt.textContent = jour2Vent + "k/h";
+  conditionsElt.textContent = jour2Vent + "Kh";
+  if (jour2Conditions == "Chance of Rain") {
+    document.getElementById('jour2Image').src = "img/rainy.gif";
+  } else if (jour2Conditions == "Rain") {
+    document.getElementById('jour2Image').src = "img/rainy.gif";
+  } else if (jour2Conditions == "Sunny") {
+    document.getElementById('jour2Image').src = "img/sunny.gif";
+  } else if (jour2Conditions == "Mostly Cloudy") {
+    document.getElementById('jour2Image').src = "img/cloudy.gif";
+  } else if (jour2Conditions == "Clear") {
+    document.getElementById('jour2Image').src = "img/sunny.gif";
+  } else {
+    document.getElementById('jour2Image').src = "img/cloudy.gif";
+  };
 
   var conditionsElt = document.getElementById('jour3');
   conditionsElt.textContent = jour3Weekday + ", " + jour3Monthname + " " + jour3Day;
@@ -102,7 +141,20 @@ ajaxGet("https://api.wunderground.com/api/50a65432f17cf542/forecast10day/q/Belgi
   var conditionsElt = document.getElementById('jour3Humidite');
   conditionsElt.textContent = jour3Humidite + "%";
   var conditionsElt = document.getElementById('jour3Vent');
-  conditionsElt.textContent = jour3Vent + "k/h";
+  conditionsElt.textContent = jour3Vent + "Kh";
+  if (jour3Conditions == "Chance of Rain") {
+    document.getElementById('jour3Image').src = "img/rainy.gif";
+  } else if (jour3Conditions == "Rain") {
+    document.getElementById('jour3Image').src = "img/rainy.gif";
+  } else if (jour3Conditions == "Sunny") {
+    document.getElementById('jour3Image').src = "img/sunny.gif";
+  } else if (jour3Conditions == "Mostly Cloudy") {
+    document.getElementById('jour3Image').src = "img/cloudy.gif";
+  } else if (jour3Conditions == "Clear") {
+    document.getElementById('jour3Image').src = "img/sunny.gif";
+  } else {
+    document.getElementById('jour3Image').src = "img/cloudy.gif";
+  };
 
   var conditionsElt = document.getElementById('jour4');
   conditionsElt.textContent = jour4Weekday + ", " + jour4Monthname + " " + jour4Day;
@@ -113,7 +165,20 @@ ajaxGet("https://api.wunderground.com/api/50a65432f17cf542/forecast10day/q/Belgi
   var conditionsElt = document.getElementById('jour4Humidite');
   conditionsElt.textContent = jour4Humidite + "%";
   var conditionsElt = document.getElementById('jour4Vent');
-  conditionsElt.textContent = jour4Vent + "k/h";
+  conditionsElt.textContent = jour4Vent + "Kh";
+  if (jour4Conditions == "Chance of Rain") {
+    document.getElementById('jour4Image').src = "img/rainy.gif";
+  } else if (jour4Conditions == "Rain") {
+    document.getElementById('jour4Image').src = "img/rainy.gif";
+  } else if (jour4Conditions == "Sunny") {
+    document.getElementById('jour4Image').src = "img/sunny.gif";
+  } else if (jour4Conditions == "Mostly Cloudy") {
+    document.getElementById('jour4Image').src = "img/cloudy.gif";
+  } else if (jour4Conditions == "Clear") {
+    document.getElementById('jour4Image').src = "img/sunny.gif";
+  } else {
+    document.getElementById('jour4Image').src = "img/cloudy.gif";
+  };
 
   var conditionsElt = document.getElementById('jour5');
   conditionsElt.textContent = jour5Weekday + ", " + jour5Monthname + " " + jour5Day;
@@ -124,7 +189,20 @@ ajaxGet("https://api.wunderground.com/api/50a65432f17cf542/forecast10day/q/Belgi
   var conditionsElt = document.getElementById('jour5Humidite');
   conditionsElt.textContent = jour5Humidite + "%";
   var conditionsElt = document.getElementById('jour5Vent');
-  conditionsElt.textContent = jour5Vent + "k/h";
+  conditionsElt.textContent = jour5Vent + "Kh";
+  if (jour5Conditions == "Chance of Rain") {
+    document.getElementById('jour5Image').src = "img/rainy.gif";
+  } else if (jour5Conditions == "Rain") {
+    document.getElementById('jour5Image').src = "img/rainy.gif";
+  } else if (jour5Conditions == "Sunny") {
+    document.getElementById('jour5Image').src = "img/sunny.gif";
+  } else if (jour5Conditions == "Mostly Cloudy") {
+    document.getElementById('jour5Image').src = "img/cloudy.gif";
+  } else if (jour5Conditions == "Clear") {
+    document.getElementById('jour5Image').src = "img/sunny.gif";
+  } else {
+    document.getElementById('jour5Image').src = "img/cloudy.gif";
+  };
 
   var conditionsElt = document.getElementById('jour6');
   conditionsElt.textContent = jour6Weekday + ", " + jour6Monthname + " " + jour6Day;
@@ -135,12 +213,20 @@ ajaxGet("https://api.wunderground.com/api/50a65432f17cf542/forecast10day/q/Belgi
   var conditionsElt = document.getElementById('jour6Humidite');
   conditionsElt.textContent = jour6Humidite + "%";
   var conditionsElt = document.getElementById('jour6Vent');
-  conditionsElt.textContent = jour6Vent + "k/h";
-
-
-
-
-
+  conditionsElt.textContent = jour6Vent + "Kh";
+  if (jour6Conditions == "Chance of Rain") {
+    document.getElementById('jour6Image').src = "img/rainy.gif";
+  } else if (jour6Conditions == "Rain") {
+    document.getElementById('jour6Image').src = "img/rainy.gif";
+  } else if (jour6Conditions == "Sunny") {
+    document.getElementById('jour6Image').src = "img/sunny.gif";
+  } else if (jour6Conditions == "Mostly Cloudy") {
+    document.getElementById('jour6Image').src = "img/cloudy.gif";
+  } else if (jour6Conditions == "Clear") {
+    document.getElementById('jour6Image').src = "img/sunny.gif";
+  } else {
+    document.getElementById('jour0Image').src = "img/cloudy.gif";
+  };
 
 
 });
