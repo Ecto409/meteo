@@ -23,6 +23,8 @@
   <script src="js/vendor/modernizr-2.6.2.min.js"></script>
   <script src="js/ajax.js"></script>
   <script src="js/cours.js"></script>
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <link rel="stylesheet" href="css/swiper.css">
 </head>
 
 <body>
@@ -30,213 +32,252 @@
   <div class="uk-container" id="demo-content">
 
     <div id="loader-wrapper">
-
       <div id="loader"></div>
-
       <div class="loader-section section-left"></div>
       <div class="loader-section section-right"></div>
-
     </div>
 
 
     <div id="content">
-      <h1 class="uk-animation-fade" uk-scrollspy="cls: uk-animation-slide-bottom-medium; repeat: true">Next seven days</h1>
-      <div class="uk-child-width-1-1@m" uk-grid uk-scrollspy="cls: uk-animation-slide-bottom-medium; repeat: true">
-        <div>
-          <div class="uk-card uk-card-default">
-            <div class="uk-card-media-top">
-              <img src="" id="jour0Image" alt="" width="100%">
+      <h1>Next seven days</h1>
+
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" data-swiper-slide-index="0">
+            <div class="uk-child-width-1-1@m" uk-grid>
+              <div>
+                <div class="uk-card uk-card-default">
+                  <div class="uk-card-media-top">
+                    <img src="" id="jour0Image" alt="" width="100%">
+                  </div>
+                  <div class="uk-card-body">
+                    <h6 id="jour0"></h6>
+                    <h3 class="uk-card-title" id="jour0Conditions"></h3>
+                    <div class="uk-grid-divider uk-grid-small uk-margin-small-bottom" uk-grid>
+                      <div class="infos uk-width-1-3">
+                        <div id="jour0Temperature"></div>
+                        <h5>temperature</h5>
+                      </div>
+                      <div class="infos uk-width-1-3">
+                        <div id="jour0Humidite"></div>
+                        <h5>humidity</h5>
+                      </div>
+                      <div class="infos uk-width-1-3">
+                        <div id="jour0Vent"></div>
+                        <h5>wind</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="uk-card-body">
-              <h6 id="jour0"></h6>
-              <h3 class="uk-card-title" id="jour0Conditions"></h3>
-              <div class="uk-grid-divider uk-grid-small uk-margin-small-bottom" uk-grid>
-                <div class="infos uk-width-1-3">
-                  <div id="jour0Temperature"></div>
-                  <h5>temperature</h5>
+          </div>
+
+          <div class="swiper-slide" data-swiper-slide-index="1">
+            <div class="uk-child-width-1-1@m" uk-grid>
+              <div>
+                <div class="uk-card uk-card-default">
+                  <div class="uk-card-media-top">
+                    <img src="" id="jour1Image" alt="" width="100%">
+                  </div>
+                  <div class="uk-card-body">
+                    <h6 id="jour1"></h6>
+                    <h3 class="uk-card-title" id="jour1Conditions"></h3>
+                    <div class="uk-grid-divider uk-grid-small uk-margin-small-bottom" uk-grid>
+                      <div class="infos uk-width-1-3">
+                        <div id="jour1Temperature"></div>
+                        <h5>temperature</h5>
+                      </div>
+                      <div class="infos uk-width-1-3">
+                        <div id="jour1Humidite"></div>
+                        <h5>humidity</h5>
+                      </div>
+                      <div class="infos uk-width-1-3">
+                        <div id="jour1Vent"></div>
+                        <h5>wind</h5>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="infos uk-width-1-3">
-                  <div id="jour0Humidite"></div>
-                  <h5>humidity</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide" data-swiper-slide-index="2">
+            <div class="uk-child-width-1-1@m" uk-grid>
+              <div>
+                <div class="uk-card uk-card-default">
+                  <div class="uk-card-media-top">
+                    <img src="" id="jour2Image" alt="" width="100%">
+                  </div>
+                  <div class="uk-card-body">
+                    <h6 id="jour2"></h6>
+                    <h3 class="uk-card-title" id="jour2Conditions"></h3>
+                    <div class="uk-grid-divider uk-grid-small uk-margin-small-bottom" uk-grid>
+                      <div class="infos uk-width-1-3">
+                        <div id="jour2Temperature"></div>
+                        <h5>temperature</h5>
+                      </div>
+                      <div class="infos uk-width-1-3">
+                        <div id="jour2Humidite"></div>
+                        <h5>humidity</h5>
+                      </div>
+                      <div class="infos uk-width-1-3">
+                        <div id="jour2Vent"></div>
+                        <h5>wind</h5>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="infos uk-width-1-3">
-                  <div id="jour0Vent"></div>
-                  <h5>wind</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide" data-swiper-slide-index="3">
+            <div class="uk-child-width-1-1@m" uk-grid>
+              <div>
+                <div class="uk-card uk-card-default">
+                  <div class="uk-card-media-top">
+                    <img src="" id="jour3Image" alt="" width="100%">
+                  </div>
+                  <div class="uk-card-body">
+                    <h6 id="jour3"></h6>
+                    <h3 class="uk-card-title" id="jour3Conditions"></h3>
+                    <div class="uk-grid-divider uk-grid-small uk-margin-small-bottom" uk-grid>
+                      <div class="infos uk-width-1-3">
+                        <div id="jour3Temperature"></div>
+                        <h5>temperature</h5>
+                      </div>
+                      <div class="infos uk-width-1-3">
+                        <div id="jour3Humidite"></div>
+                        <h5>humidity</h5>
+                      </div>
+                      <div class="infos uk-width-1-3">
+                        <div id="jour3Vent"></div>
+                        <h5>wind</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide" data-swiper-slide-index="4">
+            <div class="uk-child-width-1-1@m" uk-grid>
+              <div>
+                <div class="uk-card uk-card-default">
+                  <div class="uk-card-media-top">
+                    <img src="" id="jour4Image" alt="" width="100%">
+                  </div>
+                  <div class="uk-card-body">
+                    <h6 id="jour4"></h6>
+                    <h3 class="uk-card-title" id="jour4Conditions"></h3>
+                    <div class="uk-grid-divider uk-grid-small uk-margin-small-bottom" uk-grid>
+                      <div class="infos uk-width-1-3">
+                        <div id="jour4Temperature"></div>
+                        <h5>temperature</h5>
+                      </div>
+                      <div class="infos uk-width-1-3">
+                        <div id="jour4Humidite"></div>
+                        <h5>humidity</h5>
+                      </div>
+                      <div class="infos uk-width-1-3">
+                        <div id="jour4Vent"></div>
+                        <h5>wind</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide" data-swiper-slide-index="5">
+            <div class="uk-child-width-1-1@m" uk-grid>
+              <div>
+                <div class="uk-card uk-card-default">
+                  <div class="uk-card-media-top">
+                    <img src="" id="jour5Image" alt="" width="100%">
+                  </div>
+                  <div class="uk-card-body">
+                    <h6 id="jour5"></h6>
+                    <h3 class="uk-card-title" id="jour5Conditions"></h3>
+                    <div class="uk-grid-divider uk-grid-small uk-margin-small-bottom" uk-grid>
+                      <div class="infos uk-width-1-3">
+                        <div id="jour5Temperature"></div>
+                        <h5>temperature</h5>
+                      </div>
+                      <div class="infos uk-width-1-3">
+                        <div id="jour5Humidite"></div>
+                        <h5>humidity</h5>
+                      </div>
+                      <div class="infos uk-width-1-3">
+                        <div id="jour5Vent"></div>
+                        <h5>wind</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide" data-swiper-slide-index="6">
+            <div class="uk-child-width-1-1@m" uk-grid>
+              <div>
+                <div class="uk-card uk-card-default">
+                  <div class="uk-card-media-top">
+                    <img src="" id="jour6Image" alt="" width="100%">
+                  </div>
+                  <div class="uk-card-body">
+                    <h6 id="jour6"></h6>
+                    <h3 class="uk-card-title" id="jour6Conditions"></h3>
+                    <div class="uk-grid-divider uk-grid-small uk-margin-small-bottom" uk-grid>
+                      <div class="infos uk-width-1-3">
+                        <div id="jour6Temperature"></div>
+                        <h5>temperature</h5>
+                      </div>
+                      <div class="infos uk-width-1-3">
+                        <div id="jour6Humidite"></div>
+                        <h5>humidity</h5>
+                      </div>
+                      <div class="infos uk-width-1-3">
+                        <div id="jour6Vent"></div>
+                        <h5>wind</h5>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="uk-child-width-1-1@m" uk-grid uk-scrollspy="cls: uk-animation-slide-bottom-medium; repeat: true">
-        <div>
-          <div class="uk-card uk-card-default">
-            <div class="uk-card-media-top">
-              <img src="" id="jour1Image" alt="" width="100%">
-            </div>
-            <div class="uk-card-body">
-              <h6 id="jour1"></h6>
-              <h3 class="uk-card-title" id="jour1Conditions"></h3>
-              <div class="uk-grid-divider uk-grid-small uk-margin-small-bottom" uk-grid>
-                <div class="infos uk-width-1-3">
-                  <div id="jour1Temperature"></div>
-                  <h5>temperature</h5>
-                </div>
-                <div class="infos uk-width-1-3">
-                  <div id="jour1Humidite"></div>
-                  <h5>humidity</h5>
-                </div>
-                <div class="infos uk-width-1-3">
-                  <div id="jour1Vent"></div>
-                  <h5>wind</h5>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="uk-child-width-1-1@m" uk-grid uk-scrollspy="cls: uk-animation-slide-bottom-medium; repeat: true">
-        <div>
-          <div class="uk-card uk-card-default">
-            <div class="uk-card-media-top">
-              <img src="" id="jour2Image" alt="" width="100%">
-            </div>
-            <div class="uk-card-body">
-              <h6 id="jour2"></h6>
-              <h3 class="uk-card-title" id="jour2Conditions"></h3>
-              <div class="uk-grid-divider uk-grid-small uk-margin-small-bottom" uk-grid>
-                <div class="infos uk-width-1-3">
-                  <div id="jour2Temperature"></div>
-                  <h5>temperature</h5>
-                </div>
-                <div class="infos uk-width-1-3">
-                  <div id="jour2Humidite"></div>
-                  <h5>humidity</h5>
-                </div>
-                <div class="infos uk-width-1-3">
-                  <div id="jour2Vent"></div>
-                  <h5>wind</h5>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="uk-child-width-1-1@m" uk-grid uk-scrollspy="cls: uk-animation-slide-bottom-medium; repeat: true">
-        <div>
-          <div class="uk-card uk-card-default">
-            <div class="uk-card-media-top">
-              <img src="" id="jour3Image" alt="" width="100%">
-            </div>
-            <div class="uk-card-body">
-              <h6 id="jour3"></h6>
-              <h3 class="uk-card-title" id="jour3Conditions"></h3>
-              <div class="uk-grid-divider uk-grid-small uk-margin-small-bottom" uk-grid>
-                <div class="infos uk-width-1-3">
-                  <div id="jour3Temperature"></div>
-                  <h5>temperature</h5>
-                </div>
-                <div class="infos uk-width-1-3">
-                  <div id="jour3Humidite"></div>
-                  <h5>humidity</h5>
-                </div>
-                <div class="infos uk-width-1-3">
-                  <div id="jour3Vent"></div>
-                  <h5>wind</h5>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="uk-child-width-1-1@m" uk-grid uk-scrollspy="cls: uk-animation-slide-bottom-medium; repeat: true">
-        <div>
-          <div class="uk-card uk-card-default">
-            <div class="uk-card-media-top">
-              <img src="" id="jour4Image" alt="" width="100%">
-            </div>
-            <div class="uk-card-body">
-              <h6 id="jour4"></h6>
-              <h3 class="uk-card-title" id="jour4Conditions"></h3>
-              <div class="uk-grid-divider uk-grid-small uk-margin-small-bottom" uk-grid>
-                <div class="infos uk-width-1-3">
-                  <div id="jour4Temperature"></div>
-                  <h5>temperature</h5>
-                </div>
-                <div class="infos uk-width-1-3">
-                  <div id="jour4Humidite"></div>
-                  <h5>humidity</h5>
-                </div>
-                <div class="infos uk-width-1-3">
-                  <div id="jour4Vent"></div>
-                  <h5>wind</h5>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="uk-child-width-1-1@m" uk-grid uk-scrollspy="cls: uk-animation-slide-bottom-medium; repeat: true">
-        <div>
-          <div class="uk-card uk-card-default">
-            <div class="uk-card-media-top">
-              <img src="" id="jour5Image" alt="" width="100%">
-            </div>
-            <div class="uk-card-body">
-              <h6 id="jour5"></h6>
-              <h3 class="uk-card-title" id="jour5Conditions"></h3>
-              <div class="uk-grid-divider uk-grid-small uk-margin-small-bottom" uk-grid>
-                <div class="infos uk-width-1-3">
-                  <div id="jour5Temperature"></div>
-                  <h5>temperature</h5>
-                </div>
-                <div class="infos uk-width-1-3">
-                  <div id="jour5Humidite"></div>
-                  <h5>humidity</h5>
-                </div>
-                <div class="infos uk-width-1-3">
-                  <div id="jour5Vent"></div>
-                  <h5>wind</h5>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="uk-child-width-1-1@m" uk-grid uk-scrollspy="cls: uk-animation-slide-bottom-medium; repeat: true">
-        <div>
-          <div class="uk-card uk-card-default">
-            <div class="uk-card-media-top">
-              <img src="" id="jour6Image" alt="" width="100%">
-            </div>
-            <div class="uk-card-body">
-              <h6 id="jour6"></h6>
-              <h3 class="uk-card-title" id="jour6Conditions"></h3>
-              <div class="uk-grid-divider uk-grid-small uk-margin-small-bottom" uk-grid>
-                <div class="infos uk-width-1-3">
-                  <div id="jour6Temperature"></div>
-                  <h5>temperature</h5>
-                </div>
-                <div class="infos uk-width-1-3">
-                  <div id="jour6Humidite"></div>
-                  <h5>humidity</h5>
-                </div>
-                <div class="infos uk-width-1-3">
-                  <div id="jour6Vent"></div>
-                  <h5>wind</h5>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+
       </div>
     </div>
+
+
+
+
+
+
+
+
 
 
     <script>
       window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')
     </script>
     <script src="js/main.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script>
+      var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 2,
+        centeredSlides: true,
+        spaceBetween: -50,
+      });
+    </script>
 
 </body>
 
