@@ -34,7 +34,7 @@ body {
 .uk-card {
   background: #fff;
   box-shadow: 0px 5px 25px 0px rgba(46, 61, 73, 0.2);
-  border-radius: 0.375rem;
+  border-radius: 0.85rem;
 }
 
 .uk-card:hover {
@@ -43,7 +43,7 @@ body {
 }
 
 .uk-card-media-top img {
-  border-radius: 0.375rem 0.375rem 0 0;
+  border-radius: 0.85rem 0.85rem 0 0;
 }
 
 /* On modifie légèrement les h1 et h3 */
