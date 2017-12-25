@@ -32,6 +32,7 @@
   -ms-transform: scaleX(0.9) scaleY(0.9);
   -webkit-transform: scaleX(0.9) scaleY(0.9);
   transform: scaleX(0.9) scaleY(0.9);
+  opacity: 0.5;
 }
 
 .swiper-slide-next {
@@ -39,4 +40,5 @@
   -ms-transform: scaleX(0.9) scaleY(0.9);
   -webkit-transform: scaleX(0.9) scaleY(0.9);
   transform: scaleX(0.9) scaleY(0.9);
+  opacity: 0.5;
 }
