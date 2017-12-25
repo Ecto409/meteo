@@ -1,11 +1,4 @@
-.swiper-container {
-  width: 100%;
-}
-
-.swiper-wrapper {
-  margin-left: -75px;
-  width: 300px;
-}
+.swiper-wrapper {}
 
 .swiper-slide {
   text-align: center;
