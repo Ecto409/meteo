@@ -4,7 +4,6 @@
   text-align: center;
   font-size: 18px;
   background: #fff;
-  margin-top: 50px;
   /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
@@ -26,4 +25,18 @@
   transition: 0.5s;
   margin-top: 0px;
   z-index: 2;
+}
+
+.swiper-slide-prev {
+  margin-top: 10px;
+  -ms-transform: scaleX(0.9) scaleY(0.9);
+  -webkit-transform: scaleX(0.9) scaleY(0.9);
+  transform: scaleX(0.9) scaleY(0.9);
+}
+
+.swiper-slide-next {
+  margin-top: 10px;
+  -ms-transform: scaleX(0.9) scaleY(0.9);
+  -webkit-transform: scaleX(0.9) scaleY(0.9);
+  transform: scaleX(0.9) scaleY(0.9);
 }
