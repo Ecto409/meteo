@@ -37,6 +37,10 @@ body {
   border-radius: 0.6rem;
 }
 
+.uk-card-title {
+  font-size: 1.4em;
+}
+
 .uk-card:hover {
   box-shadow: 0px 2px 15px 0px rgba(46, 61, 73, 0.2);
   transition: all 0.3s ease;
@@ -44,7 +48,7 @@ body {
 
 .top-background {
   height: 230px;
-  background-color: #005b96;
+  background-color: #F2D1B3;
   width: 100%;
   border-radius: 0.6rem 0.6rem 0 0;
 }
@@ -81,7 +85,7 @@ h6 {
   color: #ccc;
   margin-bottom: 0px;
   font-weight: 400;
-  font-size: 0.75em;
+  font-size: 0.8em;
   text-align: left;
 }
 
