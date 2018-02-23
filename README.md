@@ -9,4 +9,4 @@ Simply displays the weather forecast for the next seven days.
 * Frontend framework : UIKit
 * Mobile Touch Slider: Swiper
 
-I do not own any of these ressources.
+I do not own any of these ressources. test
